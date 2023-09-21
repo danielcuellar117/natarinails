@@ -75,7 +75,7 @@ body{
     flex-direction: column;
     cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .nav-links{
         position: absolute;
         top: 105px;
