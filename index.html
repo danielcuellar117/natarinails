@@ -10,25 +10,23 @@
 <body>
     <div class="container">
         <header class="header">
+          <div class="nav_toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="logo">
             <img src="./images/logo-inicial.png" alt="Logotipo inicial de la marca">
           </div>
             <nav>
-              
-              <ul class="nav-links">
+              <ul class="nav-links" id="_links">
                 <li><a href="#">Tienda</a></li>
                 <li><a href="#">Talleres  </a></li>
                 <li><a href="#">Agenda tu sesion</a></li>
                 <li><a href="#">Contacto</a></li>              
               </ul>
-              
-              <div class="nav_toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
             </nav>
-            <a href="#" class="btn"><button>Carrito</button></a>
+            <a href="#" class="btn"><button>Carrito</button></a>   
         </header>
         <main>
            carrusel
@@ -40,5 +38,11 @@
         </main>
     </div>
     <div class="container"></div> 
+    <script>
+      _toggle.onclick=()=>{
+        _links.classList.toggle("open")
+        _toggle.classList.toggle("close")
+      }
+    </script>
 </body>
 </html>
