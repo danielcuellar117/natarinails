@@ -1,17 +1,42 @@
 @import url(./main.css);
+body {
+    background: #ffdcdc;
+    color: black;
+}
 h1 {
     text-align: center;
-    margin: 2rem 0rem;
+    margin: 1.5rem 0rem 0rem 0rem;
     font-size: 2rem;
     padding: 0;
 }
+/* categorias, lado izquierdo*/
+.categorias {
+    list-style: none;
+    padding: 0;
+    background-color: #ffdcdc;
+}
+.categorias-list {
+    margin: 3rem 3rem 3rem 0rem;
+}
+
+.categorias a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.categorias a:hover {
+    color: #e44d26; 
+}
+
 
 .productos_esmaltes {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
-    margin: 0;
+    height: 35rem;
+    margin: 0rem .5rem;
 }
 
 .productos {
@@ -22,7 +47,7 @@ h1 {
 
 .producto {
     width: 200px;
-    margin: 20px;
+    margin: 5px 20px;
     text-align: center;
     transition: transform 0.3s ease;
 }
