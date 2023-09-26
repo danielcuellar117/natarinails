@@ -1,62 +1,51 @@
 @import url(./main.css);
 body {
     background: #ffdcdc;
-    color: black;
+    padding: 4rem;
 }
-h1 {
-    text-align: center;
-    margin: 1.5rem 0rem 0rem 0rem;
-    font-size: 2rem;
-    padding: 0;
-}
-/* categorias, lado izquierdo*/
-.categorias {
-    list-style: none;
-    padding: 0;
-    background-color: #ffdcdc;
-}
-.categorias-list {
-    margin: 3rem 3rem 3rem 0rem;
-}
-
-.categorias a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.categorias a:hover {
-    color: #e44d26; 
-}
-
-
-.productos_esmaltes {
+.container-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35rem;
-    margin: 0rem .5rem;
-}
-
-.productos {
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 4rem;
+    justify-content: space-around;
+    gap: 20px;
+}
+.item {
+    background: #fcd7d7;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.item:hover {
+    transform: scale(1.09);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+.item img {
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    transition: transform 0.5s;
 }
 
-.producto {
-    width: 200px;
-    margin: 5px 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.producto:hover {
+.item:hover img {
     transform: scale(1.1);
 }
 
-.producto img {
-    max-width: 100%;
-    height: auto;
+.info-product {
+    padding: 15px;
+
+}
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button {
+    border: none;
+    background: #894DAD;
+    color: #fff;
+    padding: 15px 15px;
+    cursor: pointer;
 }
