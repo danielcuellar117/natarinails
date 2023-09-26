@@ -75,6 +75,14 @@ body{
     flex-direction: column;
     cursor: pointer;
 }
+.bg-nailtools {
+    background-image: url( '../images/nailtools.jpeg' );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+
+}
 @media (max-width: 1081px) {
     .header {
         display: flex;
@@ -126,7 +134,14 @@ body{
         transform: translateX(0) !important;
         transform: translateY(0) !important;
     }
-}
+    .footer-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-banner {
+        font-size: 2rem;
+        }
+    }
 
 /* .slider-box{
     width: 100%;
@@ -173,25 +188,15 @@ body{
     80% { margin-left: -300%;}
     100% { margin-left: -300%;}
 } */
-
-
-.divisor{
+.divisor {
     margin: 0;
     width: 100%;
-    position: fi;
-    display: inline-block;
+    display: flex;
     text-align: center;
-}
-.texto{
-    color: #eceff1;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -200%);
-}
-.texto h2{
-    font-size: 40px;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
 }
 .btn-tienda{
     margin-top: 10px;
@@ -225,9 +230,15 @@ body{
     margin-right: 2rem;
     gap: 1rem;
 }
-@media(max-width: 1081px){
-    .footer-inner{
-        flex-direction: column;
-        align-items: center;
-    }
+
+
+.title-banner {
+    color: #eceff1;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
+.slogan-banner{
+    color: #eceff1;
+}
+
+
