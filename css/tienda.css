@@ -1,0 +1,55 @@
+@import url(./main.css);
+body {
+    background: #ffdcdc;
+    padding: 4rem;
+}
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+    justify-content: space-around;
+    gap: 20px;
+}
+.item {
+    background: #fcd7d7;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.5s, box-shadow 0.5s;
+    
+}
+.item:hover {
+    transform: scale(1.09);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+.item img {
+    margin: 1rem 0rem;
+    padding: .7rem 1.4rem;
+    width: 100%;
+    height: 300px;
+    border-radius: 1.3rem;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.info-product {
+    padding: 1rem;
+
+}
+.price {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin: .4rem 0;
+}
+
+.info-product button {
+    border-radius: 10px;
+    border: none;
+    background: #894DAD;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+}
