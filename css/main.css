@@ -148,3 +148,42 @@ body{
         align-items: center;
     }
 }
+
+/* Yecid*/
+
+.secciones {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contenedor-principal {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tam-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.informa-curso {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.titulo-talleres{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.listas-def {
+    margin: 50px;
+}
