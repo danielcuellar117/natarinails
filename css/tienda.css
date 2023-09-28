@@ -1,10 +1,7 @@
 @import url(./main.css);
 body {
-    background: #ffdcdc;
+    background: whitesmoke;
     padding: 0;
-}
-body {
-    background: #FFF6F4;
 }
 
 .container-items {
@@ -17,7 +14,7 @@ body {
 }
 .item {
 
-    background: #fcd7d7;    
+    background: white;    
     border-radius: 10px;
     width: 25%;
     margin: 1.5rem 0;
@@ -59,4 +56,19 @@ body {
     color: #fff;
     padding: 1rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 785px) {
+    .container-items {
+        margin:  1.5rem;
+        display: inline-flex;
+    }
+
+    .item {
+        width: 60%;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
 }
