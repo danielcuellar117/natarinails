@@ -237,8 +237,48 @@ body{
     font-weight: bold;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 .slogan-banner{
     color: #eceff1;
 }
 
 
+=======
+
+/* Yecid*/
+
+.secciones {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+}
+
+.contenedor-principal {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tam-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.informa-curso {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.titulo-talleres{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.listas-def {
+
+}
+>>>>>>> cbd3996924c3d17e6666b07ef30771c1aad80824
