@@ -89,6 +89,9 @@ body{
         justify-content: space-between;
         align-items: center;
     }
+    ul#_links {
+        z-index: 1;
+    }
 
     .nav-links{
         position: absolute;
@@ -101,7 +104,6 @@ body{
         height: auto;
         transform: translateX(-100%);
         transition: 0.4s ease all;
-        
     }
     .nav-links li{
         text-align: center;
