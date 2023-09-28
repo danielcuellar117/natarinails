@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 
 *{
@@ -11,6 +10,13 @@
 }
 body{
     background-color: #FFF6F4 ;
+    background-image: url(../images/patron.webp);
+    background-repeat: repeat;
+    background-size: 40px;
+    background-position: 0 10px;
+    box-shadow: 0 0 0 10px #fff inset;
+    background-attachment: fixed;
+    backface-visibility: hidden;
 }
 .header{
     background-color: #ffdcdc;
@@ -75,14 +81,6 @@ body{
     flex-direction: column;
     cursor: pointer;
 }
-.bg-nailtools {
-    background-image: url( '../images/nailtools.jpeg' );
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-
-}
 @media (max-width: 1081px) {
     .header {
         display: flex;
@@ -142,76 +140,123 @@ body{
         font-size: 2rem;
         }
     }
+.talleres-online{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
-/* .slider-box{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto 0;
+.contenedor-principal {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
     
 }
+.titulo a{
+    text-decoration: none;
+    color: #242424;
+}
 
-.slider-box ul{
+.titulo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.imagen{
     display: flex;
-    padding: 0;
-    width: 400%;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    /* animation: slide 10s ease-out 1s infinite both ;
-
-}
-.slider-box li{
-    width: 400%;
-    list-style: none;
-    position:relative;
-}
-.texto{
-    position: absolute;
-    text-align: center;
-    padding: 0 10%;
-    top: 50%;
-}
-.texto h2{
-    font-size: 45px;
-}
-
-
-@keyframes slide {
-
-    0% { margin-left: 0;}
-    20%{ margin-left: 0;}
-
-    20%{ margin-left: -100%;}
-    40%{ margin-left: -100%;}
-
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
-
-    80% { margin-left: -300%;}
-    100% { margin-left: -300%;}
-} */
-.divisor {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    position: relative;
     justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
 }
-.btn-tienda{
+.imagen-curso{
+    width: 750px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.informa-curso {
+    font-size: 18px;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+    margin-left: 10rem;
+}
+
+.precio{
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.inscribirme{
     margin-top: 10px;
     font-weight: 700;
     color: #894DAD;
     padding: 9px 25px;
-    background: #eceff1;
+    background:#da62ac;
     border: none;
-    
-    cursor: pointer;
-    transition: all 0.1s ease 0s;
+    margin-left: 30%;
+    margin-right: 30%;
+    }
+    .inscribirme:hover{
+        opacity: 10;
+        transition: 1s ease-in-out;
+        transform: scale(1.1);
+        text-decoration: underline;
+        
+    }
+.requerimientos-principal{
+    background-color: #ffdcdc8e;
 }
-.btn-tienda:hover{
+.requerimientos-outter{
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    
+   
+}
+
+.requerimientos-inner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;                                                                                                                                                                                                                                                                                                                     
+}
+.requerimientos-title{
+    margin: 1rem;
+}
+
+.temario-principal{
+    background-color: #f27e938e;
+}
+
+.temario-outter{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.temario-title{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-size:1.5rem;
+    margin: 1rem;
+    height: 2rem;
+    align-items: center;
+    
+}
+.clases {
+    list-style: none;
     background-color: #e2f1f8;
-    color: #242424;
+    margin: 1rem;
+}
+.clases li {
+    list-style: none;
+    background-color: #e2f1f8;
+    margin: 1rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -230,85 +275,3 @@ body{
     margin-right: 2rem;
     gap: 1rem;
 }
-
-
-.title-banner {
-    color: #eceff1;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-.slogan-banner{
-    color: #eceff1;
-}
-
-
-
-
-.secciones {
-    display: flex;
-    margin: 50px;
-    justify-content: center;
-}
-
-.contenedor-principal {
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.tam-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.informa-curso {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.titulo-talleres{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-.precio{
-    margin-top: 1rem;
-    font-weight: bolder;
-}   
-.titulo a{
-    text-decoration: none;
-    color: #242424;
-}
-.titulo a:hover{
-    color:#894DAD;
-    transition: 0,5s;
-}
-.titulo:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.certificado {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1rem;   
-    display: flex;
-}
-.certificado h4 {
-    justify-content: center;
-    display: flex;
-}
-.certificado p{
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
