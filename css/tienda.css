@@ -1,7 +1,18 @@
 @import url(./main.css);
 body {
-    background: whitesmoke;
+    background: white;
     padding: 0;
+}
+
+.list-categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+.list-categorias {
+    list-style: none;
+    font-size: 1rem;
 }
 
 .container-items {
@@ -14,7 +25,7 @@ body {
 }
 .item {
 
-    background: white;    
+    background: whitesmoke;    
     border-radius: 10px;
     width: 25%;
     margin: 1.5rem 0;
