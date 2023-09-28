@@ -10,6 +10,13 @@
 }
 body{
     background-color: #FFF6F4 ;
+    background-image: url(../images/patron.webp);
+    background-repeat: repeat;
+    background-size: 40px;
+    background-position: 0 10px;
+    box-shadow: 0 0 0 10px #fff inset;
+    background-attachment: fixed;
+    backface-visibility: hidden;
 }
 .header{
     background-color: #ffdcdc;
@@ -133,77 +140,125 @@ body{
         font-size: 2rem;
         }
     }
+.talleres-online{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
+.contenedor-principal {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
 .titulo a{
     text-decoration: none;
     color: #242424;
 }
-.titulo a:hover{
-    color:#da62ac;
-    transition: 0,5s;
-}
+
 .titulo:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
-
-.certificado {
+.imagen{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin: 1rem;   
-    display: flex;
 }
-.certificado h4 {
+.imagen-curso{
+    width: 750px;
     justify-content: center;
     display: flex;
+    margin-bottom: 1rem;
 }
-.certificado p{
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
-.secciones {
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-
-
-.contenedor-principal {
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.tam-image {
-    max-width: 100%;
-    height: auto;
-}
-
 .informa-curso {
     font-size: 18px;
     margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
-.titulo-talleres{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
 .precio{
     margin-top: 1rem;
     font-weight: bolder;
 }
+.inscribirme{
+    margin-top: 10px;
+    font-weight: 700;
+    color: #894DAD;
+    padding: 9px 25px;
+    background:#da62ac;
+    border: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    }
+    .inscribirme:hover{
+        opacity: 10;
+        transition: 1s ease-in-out;
+        transform: scale(1.1);
+        text-decoration: underline;
+        
+    }
+.requerimientos-principal{
+    background-color: #ffdcdc8e;
+}
+.requerimientos-outter{
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    
+   
+}
+
+.requerimientos-inner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;                                                                                                                                                                                                                                                                                                                     
+}
+.requerimientos-title{
+    margin: 1rem;
+}
+
+.temario-principal{
+    background-color: #f27e938e;
+}
+
+.temario-outter{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.temario-title{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-size:1.5rem;
+    margin: 1rem;
+    height: 2rem;
+    align-items: center;
+    
+}
+.clases {
+    list-style: none;
+    background-color: #e2f1f8;
+    margin: 1rem;
+}
+.clases li {
+    list-style: none;
+    background-color: #e2f1f8;
+    margin: 1rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
 
 .footer-inner{
     background-color: #ffdcdc;
