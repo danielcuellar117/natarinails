@@ -187,3 +187,16 @@ body{
 .listas-def {
     margin: 50px;
 }
+
+.img-titu {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.precio-tal {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: gray;
+}
