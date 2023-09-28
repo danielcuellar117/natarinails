@@ -133,7 +133,18 @@ body{
         font-size: 2rem;
         }
     }
-
+.titulo a{
+    text-decoration: none;
+    color: #242424;
+}
+.titulo a:hover{
+    color:#894DAD;
+    transition: 0,5s;
+}
+.titulo:hover{
+    transform: scale(1.1);
+    transition: 0.5s
+}
 .temario h4 {
     justify-content: center;
     display: flex;
