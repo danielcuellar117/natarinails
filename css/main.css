@@ -254,7 +254,6 @@ body{
 .contenedor-principal {
     width: 300px;
     padding: 20px;
-    border: 1px solid #ddd;
     text-align: center;
     margin: 0 auto;
 }
@@ -279,5 +278,37 @@ body{
 .precio{
     margin-top: 1rem;
     font-weight: bolder;
+}   
+.titulo a{
+    text-decoration: none;
+    color: #242424;
+}
+.titulo a:hover{
+    color:#894DAD;
+    transition: 0,5s;
+}
+.titulo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.certificado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;   
+    display: flex;
+}
+.certificado h4 {
+    justify-content: center;
+    display: flex;
+}
+.certificado p{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
 }
 
