@@ -275,4 +275,8 @@ body{
     display: flex;
     flex-direction: column;
 }
+.precio{
+    margin-top: 1rem;
+    font-weight: bolder;
+}
 
