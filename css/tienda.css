@@ -9,11 +9,12 @@ body {
     align-items: center;
     margin: 2rem 0;
 }
+
 .list-categorias, .link-categorias {
     list-style: none;
     font-size: 1.4rem;
     text-decoration: none;
-    color: #000000;
+    color: #202020;
 }
 
 .container-items {
