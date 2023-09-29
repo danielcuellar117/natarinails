@@ -1,145 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 @import url(/css/main.css);
 
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-}
-body{
-    background-color: #FFF6F4 ;
-    background-image: url(../images/patron.webp);
-    background-repeat: repeat;
-    background-size: 40px;
-    background-position: 0 10px;
-    box-shadow: 0 0 0 10px #fff inset;
-    background-attachment: fixed;
-    backface-visibility: hidden;
-}
-.header{
-    background-color: #ffdcdc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 80px;
-    padding: 5px 10%;
-}
-.header .logo-header{
-    cursor: pointer;
-    
-}
-.header .logo-header img{
-    height: 100px;
-    width: auto;
-}
-.header .logo-header img:hover{
-    transform: scale(1.1);
-    transition: all 0.3s;
+} */
 
-}
-.header .nav-links{
-    list-style: none;
-}
-
-.header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-}
-.header .nav-links li:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-    
-}
-
-.header .nav-links a{
-    font-size: 700;
-    color: #242424;
-    text-decoration: none;
-}
-.header .nav-links li a:hover{
-    color: #894DAD;
-}
-.header .btn button{
-    font-weight: 700;
-    color: #894DAD;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.1s ease 0s;
-}
-.header .btn button:hover{
-    background-color: #e2f1f8;
-    color: #242424;
-    transform: scale(1.1);
-}
-.nav_toggle{
-    display: none; /* Por defecto, ocultamos el icono de hamburguesa en pantallas grandes */
-    flex-direction: column;
-    cursor: pointer;
-}
-@media (max-width: 1081px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-links{
-        position: absolute;
-        top: 105px;
-        background: #ffdcdc;
-        display: flex;
-        flex-direction: column;
-        left: 0;
-        width: 100%;
-        height: auto;
-        transform: translateX(-100%);
-        transition: 0.4s ease all;
-        
-    }
-    .nav-links li{
-        text-align: center;
-        margin: 1%;
-    }
-    .nav_toggle{
-        display: flex !important;
-        flex-direction: column;
-        margin: 15px;
-    }
-    .nav_toggle span{
-        width: 30px;
-        height: 4px;
-        background: black;
-        margin-bottom: 5px;
-        border-radius: 2px;
-        transform-origin: 5px 0px;
-        transition: all 0.2s linear;
-    }
-    .close span{
-        transform: rotate(45deg) translate(0px,0px);
-    }
-    .close span:nth-child(2){
-        display: none;
-    }
-    .close span:nth-child(3){
-        transform: rotate(-45deg) translate(-5px, 1px);
-    }
-    .open {
-        transform: translateX(0) !important;
-        transform: translateY(0) !important;
-    }
-    .footer-inner{
-        flex-direction: column;
-        align-items: center;
-    }
-    .title-banner {
-        font-size: 2rem;
-        }
-    }
 
 .titulo a{
     text-decoration: none;
@@ -154,25 +23,6 @@ body{
     transition: 0.5s;
 }
 
-.certificado {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1rem;   
-    display: flex;
-}
-.certificado h4 {
-    justify-content: center;
-    display: flex;
-}
-.certificado p{
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-}
 
 .secciones {
     display: flex;
@@ -210,20 +60,4 @@ body{
 .precio{
     margin-top: 1rem;
     font-weight: bolder;
-}
-
-.footer-inner{
-    background-color: #ffdcdc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.footer-inner .logo{
-    display: flex;
-    margin-left: 2rem;
-}
-.redes {
-    display: flex;
-    margin-right: 2rem;
-    gap: 1rem;
 }
