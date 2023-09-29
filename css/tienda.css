@@ -29,6 +29,7 @@ body {
     background: whitesmoke;
     border-radius: 10px;
     width: 25%;
+
     margin: 1.5rem 0;
     transition: transform 0.5s, box-shadow 0.5s;
     
@@ -72,7 +73,7 @@ body {
 
 @media screen and (max-width: 785px) {
     .container-items {
-        margin:  1.5rem;
+        margin:  .9rem 0;
         display: inline-flex;
     }
 
@@ -83,6 +84,11 @@ body {
 
     .price {
         font-size: 0.9rem;
+    }
+    .list-categorias {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
     }
 }
 .footer-inner{
