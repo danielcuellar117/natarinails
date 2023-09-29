@@ -28,7 +28,7 @@ body {
     background: rgb(254, 231, 231);
     border-radius: 20px;    
     width: 50%;
-    padding: 1rem 4rem 1rem 0 ;
+    padding: 2.5rem 4rem 2.5rem 0 ;
     text-align: end;
    
 }
@@ -50,6 +50,28 @@ body {
     background-color: #e2f1f8;
     color: #242424;
     transform: scale(1.1);
+}
+.horas-formularios{
+    margin: 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(254, 231, 231) ;
+}
+.hora-formulario{
+    margin: 1rem 2.2rem;
+    cursor: pointer;
+    transition: .5s;
+    color: rgb(27, 26, 26);
+    background:rgb(255, 237, 237);
+    padding: .3rem;
+    border-radius: 8px;
+}
+.hora-formulario:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(252, 195, 203);
+    padding: .3rem;
+    margin: 1rem 1.5rem;
 }
 .servicios-opciones {
     font-size: 1.5rem;
