@@ -7,13 +7,34 @@ body {
     box-shadow: 0 0 0 10px #fff inset;
     background-attachment: fixed;
     backface-visibility: hidden;
-
 }
 .formulario {
-    text-align: center;
-    margin: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4rem 2rem;
+    padding: 0;
 }
 .registro {
     margin: 1rem 2.5rem;
-    padding: .4rem;
+    text-align: center;
+    height: 45px;
+    border-radius: 6px;
+    border-color: #ffdee0;
+}
+.datos-info { 
+    color: rgb(0, 0, 0);
+    background: rgb(254, 231, 231);
+    border-radius: 20px;    
+    width: 50%;
+    margin: 1rem 1rem;
+    padding: 2rem ;
+    text-align: end;
+}
+label {
+    text-align: start;
+    font-size: 1.5rem;
+}
+.calendario{
+    height: 45px;
 }

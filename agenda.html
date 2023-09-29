@@ -24,35 +24,30 @@
             </ul>
           </nav>
           <a href="#" class="btn"><button>Agenda una cita</button></a>   
-      </header>  
-      <main>
+    </header>  
+    <main>
         <form action="procesar.php" method="post">
             <div class="formulario">
-
-                <label>Nombres: <input type="text" class="registro nombre" name="nombre" required> </label>
-                <label>apellidos: <input type="text" class="registro apellido" name="apellido" required> </label>
-                <br>
-                <label>Email: <input type="email" class="registro email" name="email" required> </label>
-                <label>Contraseña: <input type="password" class=" registro contrasena" name="contrasena"> </label>
-                <br>
-
-                <div class="genero">
-                    <label><input type="radio" name="pet" value="cat" /> masculino</label>
-                    <label><input type="radio" name="pet" value="dog" /> femenino</label>
-                    <label><input type="radio" name="pet" value="dog" /> otro</label>
+                <div class="datos-info">
+                    <label>Nombres: <input type="text" class="registro nombre" name="nombre" required> </label> <br>
+                    <label>Apellidos: <input type="text" class="registro apellido" name="apellido" required> </label> <br>
+                    <label>Email: <input type="email" class="registro email" name="email" required> </label> <br>
+                    <label>Telefono: <input type="number" class="registro numero" name="numero" required> </label> <br>
                 </div>
-
-                  
+                <label class="calendario-label"><input type="datetime-local" class="calendario"></label>
+                <label><!-- seleccion servicio--></label>
 
             </div>
-        
-
-      </main>
+    </main>
       
+      <script>
+        _toggle.onclick=()=>{
+          _links.classList.toggle("open")
+          _toggle.classList.toggle("close")
+        }
+      </script>
 
-
-
-      <footer class="footer">
+    <footer class="footer">
         <div class="footer-inner">
         <div class="logo">
         <img src="./images/logo-inicial.png" alt="Logo footer" width="100" height="100">
@@ -69,13 +64,6 @@
           <a href="#"><img src="./images/logo-youtube.png" alt="Logo YT" height="35" width="35"></a>
         </div>
       </div>
-      </footer>
-      <script>
-        _toggle.onclick=()=>{
-          _links.classList.toggle("open")
-          _toggle.classList.toggle("close")
-        }
-      </script>
-    
+    </footer>
 </body>
 </html>
