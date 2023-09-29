@@ -1,10 +1,17 @@
 @import url(./main.css);
 body {
-    background: #ffdcdc;
-    padding: 0;
+    background: rgb(255, 255, 255);
 }
-body {
-    background: #FFF6F4;
+
+.list-categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+.list-categorias {
+    list-style: none;
+    font-size: 1rem;
 }
 
 .container-items {
@@ -15,9 +22,8 @@ body {
 
     gap: 10px;
 }
-.item {
-
-    background: #fcd7d7;    
+.item {   
+    background: whitesmoke;
     border-radius: 10px;
     width: 25%;
     margin: 1.5rem 0;
@@ -61,6 +67,20 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 785px) {
+    .container-items {
+        margin:  1.5rem;
+        display: inline-flex;
+    }
+
+    .item {
+        width: 60%;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
+}
 .footer-inner{
     background-color: #ffdcdc;
     display: flex;
@@ -132,3 +152,4 @@ body {
         align-items: center;
     }
     }
+
