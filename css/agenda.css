@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin: 4rem 2rem;
+    margin: 3rem 2rem 2rem 2rem;
     padding: 0;
 }
 
@@ -35,21 +35,6 @@ body {
 .calendario{
     margin: .8rem 1.5rem;
     height: 45px;
-}
-.btn{
-    font-weight: 700;
-    color: #894DAD;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.1s ease 0s;
-}
-.btn:hover{
-    background-color: #e2f1f8;
-    color: #242424;
-    transform: scale(1.1);
 }
 .horas-formularios{
     margin: 1.2rem;
@@ -76,4 +61,38 @@ body {
 .servicios-opciones {
     font-size: 1.5rem;
     margin: 4rem 1rem;
+}
+.enviar {
+    text-align: center;
+    margin: .3rem 0 2rem 0;
+}
+.btn{
+    text-align: center;
+    font-weight: 700;
+    color: #894DAD;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+.btn:hover{
+    background-color: #e2f1f8;
+    color: #242424;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    .formulario {
+        flex-direction: column; /* Cambia a diseño de columna */
+        align-items: center; /* Centra verticalmente */
+        margin: 3rem 0; /* Margen en los lados automáticos para centrar horizontalmente */
+    }
+    .datos-info {
+        text-align: center;
+
+    }
+    .registro {
+        width: 100%;
+    }
 }
