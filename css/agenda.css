@@ -10,15 +10,16 @@ body {
 }
 .formulario {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 4rem 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 3rem 2rem 2rem 2rem;
     padding: 0;
 }
+
 .registro {
-    margin: 1rem 2.5rem;
+    margin: 1rem;
     text-align: center;
-    height: 45px;
+    height: 40px;
     border-radius: 6px;
     border-color: #ffdee0;
 }
@@ -27,14 +28,71 @@ body {
     background: rgb(254, 231, 231);
     border-radius: 20px;    
     width: 50%;
-    margin: 1rem 1rem;
-    padding: 2rem ;
+    padding: 2.5rem 4rem 2.5rem 0 ;
     text-align: end;
-}
-label {
-    text-align: start;
-    font-size: 1.5rem;
+   
 }
 .calendario{
+    margin: .8rem 1.5rem;
     height: 45px;
+}
+.horas-formularios{
+    margin: 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(254, 231, 231) ;
+}
+.hora-formulario{
+    margin: 1rem 2.2rem;
+    cursor: pointer;
+    transition: .5s;
+    color: rgb(27, 26, 26);
+    background:rgb(255, 237, 237);
+    padding: .3rem;
+    border-radius: 8px;
+}
+.hora-formulario:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(252, 195, 203);
+    padding: .3rem;
+    margin: 1rem 1.5rem;
+}
+.servicios-opciones {
+    font-size: 1.5rem;
+    margin: 4rem 1rem;
+}
+.enviar {
+    text-align: center;
+    margin: .3rem 0 2rem 0;
+}
+.btn{
+    text-align: center;
+    font-weight: 700;
+    color: #894DAD;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+.btn:hover{
+    background-color: #e2f1f8;
+    color: #242424;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    .formulario {
+        flex-direction: column; /* Cambia a diseño de columna */
+        align-items: center; /* Centra verticalmente */
+        margin: 3rem 0; /* Margen en los lados automáticos para centrar horizontalmente */
+    }
+    .datos-info {
+        text-align: center;
+
+    }
+    .registro {
+        width: 100%;
+    }
 }

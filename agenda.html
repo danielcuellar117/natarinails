@@ -26,7 +26,7 @@
           <a href="agenda.html" class="btn"><button>Agenda una cita</button></a>   
     </header>  
     <main>
-        <form action="procesar.php" method="post">
+        <form action="///" method="post">
             <div class="formulario">
                 <div class="datos-info">
                     <label>Nombres: <input type="text" class="registro nombre" name="nombre" required> </label> <br>
@@ -34,19 +34,43 @@
                     <label>Email: <input type="email" class="registro email" name="email" required> </label> <br>
                     <label>Telefono: <input type="number" class="registro numero" name="numero" required> </label> <br>
                 </div>
-                <label class="calendario-label"><input type="datetime-local" class="calendario"></label>
-                <label><!-- seleccion servicio--></label>
+                <div class="servicios-formulario">
+                  <label class="calendario-label"><input type="date" class="calendario"></label> <br>
+                  <div class="horas-formularios">
+                    <div class="horas-am">
+                      <div class="hora-formulario"  role="button">07:30</div>
+                      <div class="hora-formulario"  role="button">08:30</div>
+                      <div class="hora-formulario"  role="button">09:30</div>
+                      <div class="hora-formulario"  role="button">10:30</div>
+                    </div>
+                    <div class="horas-pm">
+                      <div class="hora-formulario"  role="button">12:30</div>
+                      <div class="hora-formulario"  role="button">13:30</div>
+                      <div class="hora-formulario"  role="button">14:30</div>
+                      <div class="hora-formulario"  role="button">15:30</div>
+                  </div>
+                   
 
+                  </div>
+                  <label class="servicios-opciones" for="opcion"></label>
+                  <select name="opcion">
+                      <option value="opcion1">Recubrimiento en acrilico</option>
+                      <option value="opcion2">Capping con semipermanente</option>
+                      <option value="opcion3">diseño elaborado</option>
+                      <option value="opcion4">Retoque en acrilico</option>
+                  </select>
+                </div>
+            </div>
+            <div class="enviar">
+              <input class="btn" type="submit" value="Enviar">
             </div>
     </main>
-      
       <script>
         _toggle.onclick=()=>{
           _links.classList.toggle("open")
           _toggle.classList.toggle("close")
         }
       </script>
-
     <footer class="footer">
         <div class="footer-inner">
         <div class="logo">
