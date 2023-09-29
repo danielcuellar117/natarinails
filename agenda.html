@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA</title>
+    <link rel="stylesheet" href="./css/agenda.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav_toggle" id="_toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo-header">
+          <a href="./index.html"><img src="./images/logo-inicial.png" alt="Logotipo inicial de la marca"></a>
+        </div>
+          <nav>
+            <ul class="nav-links" id="_links">
+              <li><a href="./tienda.html">Tienda</a></li>
+              <li><a href="talleres.html">Talleres  </a></li>
+              <li><a href="#">Servicios</a></li>
+            </ul>
+          </nav>
+          <a href="agenda.html" class="btn"><button>Agenda una cita</button></a>   
+    </header>  
+    <main>
+        <form action="procesar.php" method="post">
+            <div class="formulario">
+                <div class="datos-info">
+                    <label>Nombres: <input type="text" class="registro nombre" name="nombre" required> </label> <br>
+                    <label>Apellidos: <input type="text" class="registro apellido" name="apellido" required> </label> <br>
+                    <label>Email: <input type="email" class="registro email" name="email" required> </label> <br>
+                    <label>Telefono: <input type="number" class="registro numero" name="numero" required> </label> <br>
+                </div>
+                <label class="calendario-label"><input type="datetime-local" class="calendario"></label>
+                <label><!-- seleccion servicio--></label>
+
+            </div>
+    </main>
+      
+      <script>
+        _toggle.onclick=()=>{
+          _links.classList.toggle("open")
+          _toggle.classList.toggle("close")
+        }
+      </script>
+
+    <footer class="footer">
+        <div class="footer-inner">
+        <div class="logo">
+        <img src="./images/logo-inicial.png" alt="Logo footer" width="100" height="100">
+      </div>
+        <div class="Contacto">
+          <p>nailstudionat@gmail.com</p>
+          <p>Telefono</p>
+          <p>(123) 123-123</p>
+        </div>
+        <div class="redes">
+          <a href="#"><img src="./images/logo-facebook.png" alt="Logo FB" height="30" width="30"></a>
+          <a href="#"><img src="./images/logo-instagram.png" alt="Logo IG" height="30" width="30"></a>
+          <a href="#"><img src="./images/logo-whatsapp.png" alt="Logo WA" height="32" width="32"></a>
+          <a href="#"><img src="./images/logo-youtube.png" alt="Logo YT" height="35" width="35"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

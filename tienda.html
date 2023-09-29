@@ -26,7 +26,7 @@
           <li><a href="#">Servicios</a></li>
         </ul>
       </nav>
-      <a href="#" class="btn"><button>Agenda una cita</button></a>   
+      <a href="agenda.html" class="btn"><button>Agenda una cita</button></a>   
 
   </header>   
 
@@ -34,9 +34,9 @@
       <!--  -->
       <section class="menu-categorias">
         <ul class="list-categorias">
-          <li class="categorias-productos">ESMALTES</li>
-          <li class="categorias-productos">PINCELES</li>
-          <li class="categorias-productos">ACCESORIOS</li>
+          <li class="categorias-productos"><a class="link-categorias" href="">ESMALTES</a></li>
+          <li class="categorias-productos"><a class="link-categorias" href="">PINCELES</a></li>
+          <li class="categorias-productos"><a class="link-categorias" href="">ACCESORIOS</a></li>
         </ul>
       </section>
 
@@ -49,7 +49,7 @@
                 <img src="./images/esmalte1.jpg" alt="producto"/>
               </figure>
               <div class="info-product">
-                <h2>Esmaletes</h2>
+                <h2>ESMALTES</h2>
                 <p class="price">$80</p>
                 <button>Añadir al carrito</button>
               </div>
@@ -60,7 +60,7 @@
                 <img src="./images/esmalte2.jpg"alt="producto"/>
               </figure>
               <div class="info-product">
-                <h2>Esmaletes</h2>
+                <h2>ESMALTES</h2>
                 <p class="price">$20</p>
                 <button>Añadir al carrito</button>
               </div>
@@ -71,7 +71,7 @@
                 <img src="./images/esmalte3.jpg" alt="producto"/>
               </figure>
               <div class="info-product">
-                <h2>Esmaletes</h2>
+                <h2>ESMALTES</h2>
                 <p class="price">$50</p>
                 <button>Añadir al carrito</button>
               </div>
@@ -118,7 +118,7 @@
                 <img src="./images/piedras.jpg" alt="producto"/>
               </figure>
               <div class="info-product">
-                <h2>piedras</h2>
+                <h2>ACCESORIOS</h2>
                 <p class="price">$80</p>
                 <button>Añadir al carrito</button>
               </div>
@@ -129,7 +129,7 @@
                 <img src="./images/piedras2.jpg" alt="producto" />
               </figure>
               <div class="info-product">
-                <h2>piedras</h2>
+                <h2>ACCESORIOS</h2>
                 <p class="price">$80</p>
                 <button>Añadir al carrito</button>
               </div>
@@ -140,7 +140,7 @@
                 <img src="./images/piedras3.jpg" alt="producto" />
               </figure>
               <div class="info-product">
-                <h2>piedras</h2>
+                <h2>ACCESORIOS</h2>
                 <p class="price">$80</p>
                 <button>Añadir al carrito</button>
               </div>
@@ -166,5 +166,11 @@
       </div>
     </div>
     </footer>
+    <script>
+      _toggle.onclick=()=>{
+        _links.classList.toggle("open")
+        _toggle.classList.toggle("close")
+      }
+    </script>
 </body>
 </html>
