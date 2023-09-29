@@ -1,7 +1,6 @@
 @import url(./main.css);
 body {
-    background: white;
-    padding: 0;
+    background: rgb(255, 255, 255);
 }
 
 .list-categorias {
@@ -25,9 +24,8 @@ body {
 
     gap: 10px;
 }
-.item {
-
-    background: whitesmoke;    
+.item {   
+    background: whitesmoke;
     border-radius: 10px;
     width: 25%;
     margin: 1.5rem 0;
