@@ -1,3 +1,5 @@
+/*
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 
@@ -77,7 +79,7 @@ body{
     transform: scale(1.1);
 }
 .nav_toggle{
-    display: none; /* Por defecto, ocultamos el icono de hamburguesa en pantallas grandes */
+    display: none; // Por defecto, ocultamos el icono de hamburguesa en pantallas grandes
     flex-direction: column;
     cursor: pointer;
 }
@@ -275,3 +277,4 @@ body{
     margin-right: 2rem;
     gap: 1rem;
 }
+*/
